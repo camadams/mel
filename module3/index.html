@@ -5,78 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mod3</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
-        .ta {
-            display: block;
-            padding: 0px 30px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            width: 100%;
+            gap: 2.5rem;
+            /* gap-10 */
+            padding: 2.5rem 1rem;
+            /* pt-10 with padding on the sides */
+            box-sizing: border-box;
+            /* Include padding in width calculations */
         }
 
         .col {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            /* gap-6 */
+            margin-bottom: 2.5rem;
+            /* mb-10 */
+            flex: 1;
+        }
+
+        .col img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 1rem;
+            /* rounded-2xl */
+        }
+
+        .col div {
+            font-weight: 600;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .col a {
+            color: #666;
+            font-family: 'Muli', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+            text-decoration: none;
         }
 
         @media (min-width: 768px) {
+            main {
+                flex-direction: row;
+                flex-wrap: wrap;
+                /* Allow items to wrap to the next line if needed */
+                justify-content: center;
+                /* Center the content */
+                max-width: 100%;
+                /* Contain within the screen width */
+            }
+
             .col {
-                display: block;
+                max-width: calc(33.333% - 2rem);
+                /* Adjust width for three columns with spacing */
+                flex-basis: calc(33.333% - 2rem);
+                box-sizing: border-box;
+                /* Include padding and border in width calculations */
             }
-
-            .ta {
-                display: flex;
-            }
-
         }
     </style>
-
 </head>
 
 <body>
-    <main class="ta max-w-6xl mx-auto w-full gap-10 pt-10">
-        <div class="col  flex flex-col gap-6 mb-10">
+    <main>
+        <div class="col">
             <div>
                 <img src="https://www.whereitallbegan.co.za/images/wiab/tours/july2022/27-schwarz/rhino-ridge-3.webp"
-                    alt="Start Planning with Philip Today" class="object-fit rounded-2xl" />
+                    alt="Start Planning with Philip Today" />
             </div>
-
-
-            <div style="font-weight: 600;font-size: 1.25rem; line-height: 1.75rem;"> 7 Trends Safari Operators in Africa
-                Are Seeing For 2024</div>
-
-
-            <a style="color: #666 ; font-family: 'muli', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif  ;"
-                href="https://skift.com/2023/12/30/7-trends-safari-operators-in-africa-are-seeing-for-2024/">Read
+            <div>7 Trends Safari Operators in Africa Are Seeing For 2024</div>
+            <a href="https://skift.com/2023/12/30/7-trends-safari-operators-in-africa-are-seeing-for-2024/">Read
                 Story</a>
         </div>
-        <div class="col  flex flex-col gap-6 mb-10">
+        <div class="col">
             <div>
                 <img src="https://www.whereitallbegan.co.za/images/wiab/tours/kruger-park-joburg-cape-town/elephant-plains-wildlife-2.webp"
-                    alt="Start Planning with Philip Today" class="object-fit rounded-2xl" />
+                    alt="Start Planning with Philip Today" />
             </div>
-
-
-            <div style="font-weight: 600;font-size: 1.25rem; line-height: 1.75rem;"> Tendenze dei tour operator africani
-                per il 2024</div>
-
-
-            <a style="color: #666 ; font-family: 'muli', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif  ;"
-                href="https://www.tempoitalia.it/2024/04/magazine/tendenze-dei-tour-operator-africani-per-il-2024/">Read
+            <div>Tendenze dei tour operator africani per il 2024</div>
+            <a href="https://www.tempoitalia.it/2024/04/magazine/tendenze-dei-tour-operator-africani-per-il-2024/">Read
                 Story</a>
         </div>
-        <div class="col  flex flex-col gap-6 mb-10">
+        <div class="col">
             <div>
                 <img src="https://www.whereitallbegan.co.za/images/wiab/tours/kruger-park-joburg-cape-town/victoria-falls.webp"
-                    alt="Start Planning with Philip Today" class="object-fit rounded-2xl" />
+                    alt="Start Planning with Philip Today" />
             </div>
-
-
-            <div style="font-weight: 600;font-size: 1.25rem; line-height: 1.75rem;">
-                Ethical Travel Specialist shares
-                how travel agents can be more aware of what is planet-conscious
-            </div>
-
-
-            <a style="color: #666 ; font-family: 'muli', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif  ;"
+            <div>Ethical Travel Specialist shares how travel agents can be more aware of what is planet-conscious</div>
+            <a
                 href="https://www.traveldailymedia.com/ethical-travel-specialist-shares-how-travel-agents-can-be-more-aware-of-what-is-planet-conscious/">Read
                 Story</a>
         </div>
