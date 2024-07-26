@@ -13,7 +13,7 @@
             font-family: Arial, sans-serif;
         }
 
-        .container {
+        .__container {
             display: flex;
             flex-direction: column;
             padding: 2rem 0;
@@ -21,14 +21,14 @@
             gap: 2rem;
         }
 
-        .content,
-        .sidebar {
+        .__content,
+        .__sidebar {
             max-width: 100%;
             margin: 0 auto;
             padding: 2rem;
         }
 
-        .title {
+        .__title {
             color: #171a1fff;
             border-bottom: 2px solid #D1D5DB;
             /* border-gray-300 */
@@ -42,13 +42,13 @@
 
         }
 
-        .steps {
+        .__steps {
             margin-top: 1rem;
             font-size: 1.125rem;
             /* text-lg */
         }
 
-        .step {
+        .__step {
             display: flex;
             gap: 10px;
             /* gap-2.5 */
@@ -57,7 +57,7 @@
             justify-content: flex-start;
         }
 
-        .step-number {
+        .__step-number {
             border-radius: 50%;
             background-color: black;
             color: white;
@@ -69,7 +69,7 @@
             flex-shrink: 0;
         }
 
-        .sidebar {
+        .__sidebar {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -83,27 +83,27 @@
             /* rounded-lg */
         }
 
-        .image-container {
+        .__image-container {
             width: 6rem;
             /* w-24 */
             height: 6rem;
             /* h-24 */
         }
 
-        .image {
+        .__image {
             width: 100%;
             height: 100%;
             object-fit: contain;
             border-radius: 50%;
         }
 
-        .sidebar-title {
+        .__sidebar-title {
             font-weight: bold;
             font-size: 1.25rem;
             text-align: center;
         }
 
-        .sidebar-text {
+        .__sidebar-text {
             color: #4B5563;
             /* text-gray-600 */
             padding: 0 1.75rem;
@@ -111,7 +111,7 @@
             text-align: center;
         }
 
-        .button {
+        .__button {
             border-radius: 1.5rem;
             /* rounded-3xl */
             background-color: black;
@@ -127,17 +127,17 @@
 
         /* Responsive design for medium devices and up (md:) */
         @media (min-width: 768px) {
-            .container {
+            .__container {
                 flex-direction: row;
                 max-width: 768px;
             }
 
-            .content,
-            .sidebar {
+            .__content,
+            .__sidebar {
                 max-width: 50%;
             }
 
-            .sidebar {
+            .__sidebar {
                 display: flex;
 
                 justify-content: center;
@@ -151,12 +151,12 @@
                 padding: 0;
             }
 
-            .sidebar .image-container {
+            .__sidebar .image-container {
                 /* margin: 2rem 0; */
                 /* Extra spacing for image */
             }
 
-            .sidebar-text {
+            .__sidebar-text {
                 padding: 0;
                 /* Remove padding on larger screens */
             }
@@ -167,36 +167,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="content">
-            <h1 class="title">Where to next?</h1>
+    <div class="__container">
+        <div class="__content">
+            <h1 class="__title">Where to next?</h1>
 
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
+            <div class="__steps">
+                <div class="__step">
+                    <div class="__step-number">1</div>
                     <div>Check out the full itinerary</div>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
+                <div class="__step">
+                    <div class="__step-number">2</div>
                     <div>Like what you see? Contact us today!</div>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
+                <div class="__step">
+                    <div class="__step-number">3</div>
                     <div>Journey confirmed & start packing</div>
                 </div>
             </div>
         </div>
 
-        <div class="sidebar">
-            <div class="image-container">
+        <div class="__sidebar">
+            <div class="__image-container">
                 <img src="images/wiab/about-wiab/start-planning-phil.png" alt="Start Planning with Philip Today"
-                    class="image" />
+                    class="__image" />
             </div>
-            <h1 class="sidebar-title">LET'S PLAN YOUR JOURNEY</h1>
-            <p class="sidebar-text">
+            <h1 class="__sidebar-title">LET'S PLAN YOUR JOURNEY</h1>
+            <p class="__sidebar-text">
                 Enquire now and our Travel Expert will get back to you within 24 hours or Whatsapp to start chatting.
             </p>
-            <a href="bespoke-adventures-overview" target="_" class="button">
+            <a href="bespoke-adventures-overview" target="_" class="__button">
                 Let's Start Planning
             </a>
         </div>
